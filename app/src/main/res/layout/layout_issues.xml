@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linerLayaoutGlobalIssues"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/linerIssues"
+        android:layout_width="match_parent"
+        android:layout_height="238dp">
+
+        <ImageView
+            android:id="@+id/imgcover"
+            android:layout_width="110dp"
+            android:layout_height="182dp"
+            app:srcCompat="@android:drawable/checkbox_off_background" />
+
+        <View
+            android:id="@+id/divider2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_weight="1"
+            android:background="?android:attr/listDivider" />
+
+        <LinearLayout
+            android:layout_width="299dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/lbltitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Título"
+                android:textColor="#000000"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/lblDescripcion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Fecha"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/lblanio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Año"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/lbldoi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Doi"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/lblvolumen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Volumen"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/lblnumero"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Numero"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="306dp"
+                android:layout_height="5dp"
+                android:background="?android:attr/listDivider" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
+

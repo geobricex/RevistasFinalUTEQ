@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linerLayaoutGlobalPubs"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/linerPubs"
+        android:layout_width="match_parent"
+        android:layout_height="290dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnHTML"
+                    android:layout_width="202dp"
+                    android:layout_height="match_parent"
+                    android:text="HTML" />
+
+                <Button
+                    android:id="@+id/btnPDF"
+                    android:layout_width="313dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="PDF" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/lbltitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="section"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/lblDescripcion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="title"
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/lblanio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="date_published"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/lblvolumen"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="keywords"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/lblauthors"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="authors"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/lblnumero"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+                <View
+                    android:id="@+id/divider4"
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:layout_weight="1"
+                    android:background="?android:attr/listDivider" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+
