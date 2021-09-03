@@ -82,7 +82,7 @@ public class PubsActivity extends AppCompatActivity {
                         JSONArray jsonArraykeywords = jsonObject.getJSONArray("keywords");
                         String keywordsString = "";
                         for (int indx = 0; indx < jsonArraykeywords.length(); indx++) {
-                            JSONObject jsonObjectkeywords = new JSONObject(jsonArraykeywords.get(i).toString());
+                            JSONObject jsonObjectkeywords = new JSONObject(jsonArraykeywords.get(indx).toString());
                             keywordsString = keywordsString + jsonObjectkeywords.getString("keyword") + "-";
                         }
                         pubs.set_keywords(keywordsString);
@@ -90,7 +90,7 @@ public class PubsActivity extends AppCompatActivity {
                         String authorsString = "";
                         JSONArray jsonArrayauthors = jsonObject.getJSONArray("authors");
                         for (int indx = 0; indx < jsonArrayauthors.length(); indx++) {
-                            JSONObject jsonObjectauthors = new JSONObject(jsonArrayauthors.get(i).toString());
+                            JSONObject jsonObjectauthors = new JSONObject(jsonArrayauthors.get(indx).toString());
                             authorsString = authorsString + jsonObjectauthors.getString("nombres") + "-";
                         }
                         pubs.set_authors(authorsString);
